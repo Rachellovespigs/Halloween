@@ -5,6 +5,16 @@ print("You wake up and see the fountain of dreams, legend says that if you are l
 print(Style.RESET_ALL)
 
 print()
+# stories = ["You walk up to the fountain hoping to get a new halo, when you make your wish, a witch comes up to you and says, that she needs 1 more person to compete in the potion contest and you excidetly say yes! They hand you a potion book, you decide to make... A. A happiness potion, B. A Flight Potion, C. A Super Strenth potion, D. A Sleepy Potion (A, B, C, or D)", "You walk away from the fountain after you have tossed your dimonds when a famous hunter comes and invites you to hunt with him. He gives you options to hunt for cryptaids or any legendary creature You... A. Look for cryptaids, B. Look for legendary creatures, C. Invite him to trick-or-treat with you, D. Politly decline his offer (A, B, C, or D)", "As you walk back home, you see a little girl crying on the sidewalk. You go up to her and ask what's wrong. She says that she really wants a Halloween costume but cannot a"];
+# ansForFirstStory = ["", "", "", ""];
+# ansForSecondStory = ["", "", "", ""];
+# ansForThirdStory = ["", "", "", ""];
+
+# if(story1)
+  # print("A or B or C or D:")
+  # if(A)
+  #   ansFoFirstStort[]
+
 
 def choice(dimonds, halo):
   while dimonds > 0:
