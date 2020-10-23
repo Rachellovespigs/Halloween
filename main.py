@@ -1,4 +1,5 @@
 from colorama import Fore, Style
+import random
 
 print(Fore.GREEN)
 print("You wake up and see the fountain of dreams, legend says that if you are lucky, then you will be rewarded with dimonds or a new halo. You decide to give it a try.")
@@ -10,6 +11,8 @@ stories = ["You walk up to the fountain hoping to get a new halo, when you make 
 
 def choice(dimonds, halo):
   while dimonds > 0:
+    word1 = random.choice(stories)
+    print(word1)
     print(Fore.RED)
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("Dimonds: ", dimonds)
@@ -45,7 +48,7 @@ def choice(dimonds, halo):
       print(Fore.LIGHTMAGENTA_EX)
     elif(direction == "D"):
       print("You decide to make a sleep potion. When you are done, you give it to the witch who turns into a human. She drinks it and goes to sleep. Everyone tries to wake her up but she has fallen into a deep sleep and the competition cannot go on anymore. All the contests get made at you and start attacking you.")
-      dimonds = -39
+      dimonds = 39
       halo = 0
       print()
       print("You have done your wish!")
