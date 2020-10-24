@@ -52,13 +52,15 @@ def choice(dimonds, halo):
         # print(Style.RESET_ALL)
         # print(Fore.LIGHTMAGENTA_EX)
 
-        if(stories == 0):
+        stories = 0
+
+        if(direction == "A"):
             print(story1_A)
-        elif(direction == 1):
+        elif(direction == "B"):
             print(story1_B)
-        elif(direction == 2):
+        elif(direction == "C"):
             print(story1_C)
-        elif(direction == 3):
+        elif(direction == "D"):
             print(story1_D)
         else:
             print("Choose Something Else")
