@@ -1,9 +1,9 @@
-from colorama import Fore, Styles
+# from colorama import Fore, Styles
 import random
 
-print(Fore.GREEN)
+# print(Fore.GREEN)
 print("You wake up and see the fountain of dreams, legend says that if you are lucky, then you will be rewarded with dimonds or a new halo. You decide to give it a try.")
-print(Style.RESET_ALL)
+# print(Style.RESET_ALL)
 
 story1 = "You walk up to the fountain hoping to get a new halo, when you make your wish, a witch comes up to you and says, that she needs 1 more person to compete in the potion contest and you excidetly say yes! They hand you a potion book, you decide to make... A. A happiness potion, B. A Flight Potion, C. A Super Strenth potion, D. A Sleepy Potion (A, B, C, or D)"
 story2 = "You walk away from the fountain after you have tossed your dimonds when a famous hunter comes and invites you to hunt with him. He gives you options to hunt for cryptaids or any legendary creature You... A. Look for cryptaids, B. Look for legendary creatures, C. Invite him to trick-or-treat with you, D. Politly decline his offer (A, B, C, or D)"
@@ -12,7 +12,8 @@ story1_A = ""
 story1_B = ""
 story1_C = ""
 story1_D = ""
-story2_A = ""
+instructions = "You walk up to the fountain hoping to get a new halo, when you make your wish, a witch comes up to you and says, that she needs 1 more person to compete in the potion contest and you excidetly say yes! They hand you a potion book, you decide to make... A. A happiness potion, B. A Flight Potion, C. A Super Strenth potion, D. A Sleepy Potion (A, B, C, or D)"
+
 print()
 
 stories = [story1, story2, story3]
@@ -29,25 +30,26 @@ stories = [story1, story2, story3]
 
 def choice(dimonds, halo):
     while dimonds > 0:
-        print(Fore.RED)
+        # print(Fore.RED)
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("Dimonds: ", dimonds)
         print("Halo: ", halo)
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-        print(Style.RESET_ALL)
-        print(Fore.CYAN)
-        direction = input("You walk up to the fountain hoping to get a new halo, when you make your wish, a witch comes up to you and says, that she needs 1 more person to compete in the potion contest and you excidetly say yes! They hand you a potion book, you decide to make... A. A happiness potion, B. A Flight Potion, C. A Super Strenth potion, D. A Sleepy Potion (A, B, C, or D)")
-        print(Style.RESET_ALL)
-        print(Fore.LIGHTMAGENTA_EX)
+        # print(Style.RESET_ALL)
+        # print(Fore.CYAN)
+        print(instructions)
+        direction = input("Your answer: ")
+        # print(Style.RESET_ALL)
+        # print(Fore.LIGHTMAGENTA_EX)
 
-        if(stories == 0):
+        if(direction == 0):
             print("story 0")
-        elif(stories == 1):
+        elif(direction == 1):
             print("story 1")
-        elif(stories == 3):
+        elif(direction == 3):
             print("bla >:(")
         else:
-            print("choose something else")
+            print("Choose Something Else")
 
             # if(direction == "A"):
             #     print("You decide to make a happiness potion, once you are done, you hand it to the witch and she turns human. Then she drinks it *Slurp*. She smiles in Glee! She is so happy, she decides to just declare everyone winner and go relax in witch island!")
