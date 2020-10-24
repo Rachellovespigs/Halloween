@@ -6,17 +6,27 @@ print("You wake up and see the fountain of dreams, legend says that if you are l
 # print(Style.RESET_ALL)
 
 story1 = "You walk up to the fountain hoping to get a new halo, when you make your wish, a witch comes up to you and says, that she needs 1 more person to compete in the potion contest and you excidetly say yes! They hand you a potion book, you decide to make... A. A happiness potion, B. A Flight Potion, C. A Super Strenth potion, D. A Sleepy Potion (A, B, C, or D)"
+
 story2 = "You walk away from the fountain after you have tossed your dimonds when a famous hunter comes and invites you to hunt with him. He gives you options to hunt for cryptaids or any legendary creature You... A. Look for cryptaids, B. Look for legendary creatures, C. Invite him to trick-or-treat with you, D. Politly decline his offer (A, B, C, or D)"
+
 story3 = "As you walk back home, you see a little girl crying on the sidewalk. You go up to her and ask what's wrong. She says that she really wants a Halloween costume but cannot a"
-story1_A = ""
-story1_B = ""
-story1_C = ""
-story1_D = ""
+
+story1_A = "You decide to make a happiness potion, once you are done, you hand it to the witch and she turns human. Then she drinks it *Slurp*. She smiles in Glee! She is so happy, she decides to just declare everyone winner and go relax in witch island!"
+
+story1_B = "You decide to make a flight potion. When you are done, you give it to the witch who turns into a human. She drinks it and goes Weeeeee she flies up into the air very joyful and suprissed that such a amatuer could make such a advanced potion! She decides to give you a grand prize! A Halo!"
+
+story1_C = "You decide to make a super Strength potion. Once you are finished, you hand it to the witch who turns into a human! She drinks it and becomes super strong! Unfortunetly, she becomes so strong she starts to take advantage of that and breaks all the potions therefore everyone has to run and the competition ends."
+
+story1_D = "You decide to make a sleep potion. When you are done, you give it to the witch who turns into a human. She drinks it and goes to sleep. Everyone tries to wake her up but she has fallen into a deep sleep and the competition cannot go on anymore. All the contests get made at you and start attacking you."
+
 instructions = "You walk up to the fountain hoping to get a new halo, when you make your wish, a witch comes up to you and says, that she needs 1 more person to compete in the potion contest and you excidetly say yes! They hand you a potion book, you decide to make... A. A happiness potion, B. A Flight Potion, C. A Super Strenth potion, D. A Sleepy Potion (A, B, C, or D)"
 
 print()
 
 stories = [story1, story2, story3]
+ans1 = [story1_A, story1_B, story1_C, story1_D]
+
+
 
 # ansForFirstStory = ["", "", "", ""];
 # ansForSecondStory = ["", "", "", ""];
@@ -42,12 +52,14 @@ def choice(dimonds, halo):
         # print(Style.RESET_ALL)
         # print(Fore.LIGHTMAGENTA_EX)
 
-        if(direction == 0):
-            print("story 0")
+        if(stories == 0):
+            print(story1_A)
         elif(direction == 1):
-            print("story 1")
+            print(story1_B)
+        elif(direction == 2):
+            print(story1_C)
         elif(direction == 3):
-            print("bla >:(")
+            print(story1_D)
         else:
             print("Choose Something Else")
 
